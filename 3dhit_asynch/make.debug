@@ -1,0 +1,25 @@
+# Zakomentuj/Odkomentuj nastepna linie, aby wylaczyc/wlaczyc debuggowanie
+#DEBUG = y
+#PROF = y
+#TIMER = y
+
+# Dodajemy flagi debuggera (lub nie) do CFLAGS
+ifeq ($(DEBUG),y)
+  DEBFLAGS = -DDEBUG
+else
+  DEBFLAGS = -DNODEBUG
+endif
+
+# Dodajemy flagi profilera (lub nie) do CFLAGS
+ifeq ($(PROF),y)
+  DEBFLAGS += -DPROF
+else
+  DEBFLAGS += -DNOPROF
+endif
+
+# Dodajemy flagi timera (lub nie) do CFLAGS
+ifeq ($(TIMER),y)
+  DEBFLAGS += -DTIMER
+else
+  DEBFLAGS += -DNOTIMER
+endif
