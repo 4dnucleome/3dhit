@@ -56,6 +56,9 @@ grestore
 %\usepackage{graphicx}
 \usepackage[bottom]{footmisc}
 % places footnotes at page bottom
+\usepackage{algorithmic}
+\usepackage{algorithm}
+
 
 
 \newcommand{\icm}{\emph{ICM}}
@@ -294,8 +297,9 @@ It uses in-house customised version of Smith-Waterman dynamic programing
 algorithm combined with intensive three-dimensional rotation and translation
 routines that align two geometrical objects in order to minimize the root mean square
 distance computed for all heavy atoms from both proteins.
+The pseudo-code of entire program is listed in the Algorithm 1 section.
 Virtually, the most time consuming part of the code is the preparation of structural
-alignment matrix, which is input data for the Smith-Waterman algorithm.
+alignment matrix, which is input data for the Smith-Waterman algorithm (step 2 of Algorithm 1).
 To identify similarity substructures of two proteins the program compares
 parts of their chains with a fixed length of 256 amino acids.
 We call them \emph{segments}.
@@ -324,6 +328,96 @@ The resulting score (number of superimposed Calpha atoms) is recorded in an
 additional final alignment matrix, containing segment superposition scores.
 This matrix is then used to find the best alignment of whole proteins.
 If no pair of segments has passed all filters, the overall score is 0.
+
+\begin{algorithm}
+\caption{A~sketch of the structural alignment algorithm}
+
+\begin{tabular}{lp{13.39cm}}
+{\em Input:} &
+Two protein sequences: \texttt{protein1} and \texttt{protein2}.\\
+{\em Output:} &
+Structural alignment of the given proteins.\\
+\end{tabular}
+
+\begin{enumerate}
+\item
+Divide each protein into segments of fixed length (256 amino acids).
+
+\item 
+\begin{verbatim}
+// Create a structural alignment matrix containing similarity
+// scores between each pair of segments.
+\end{verbatim}
+For each \texttt{segment1} in \texttt{protein1} and \texttt{segment2} in \texttt{protein2},
+compute the number of superimposed Calpha atoms in the aligned pair of segments:
+\begin{verbatim}
+    similarityMatrix[segment1, segment2] =
+        ComputeAlignmentOfSegments(segment1, segment2)
+\end{verbatim}
+
+\item
+Find alignment of the whole proteins by running Smith-Waterman algorithm on them with the \texttt{similarityMatrix} as an input.
+
+\end{enumerate}
+\end{algorithm}
+
+\begin{algorithm}
+\caption{\texttt{ComputeAlignmentOfSegments(segment1, segment2)}}
+
+\begin{tabular}{lp{13.39cm}}
+{\em Input:} &
+Two segments of potein sequences.\\
+{\em Output:} &
+The number of superimposed Calpha atoms in the aligned segments.\\
+\end{tabular}
+
+\begin{enumerate}
+\item
+Extract the seed of each segment (seed is the central part of segment consisting of 13 amino acids).
+
+\item
+Find the rotation matrix and the translation vector minimizing the RMSD between the two seeds.
+
+\item
+If the optimal RMSD is too low, exit and return 0.
+
+\item
+For \texttt{len} in \{100, 200, 256\}:
+\begin{itemize}
+\item[(4a)]
+Define the subsequences to consider:\\
+\begin{tabular}{lp{8cm}}
+\texttt{subsequence1 =} &
+the subsequence of length \texttt{len} surrounding the seed of \texttt{segment1}. \\
+\texttt{subsequence2 =} &
+the subsequence of length \texttt{len} surrounding the seed of \texttt{segment2}. \\
+\end{tabular}
+
+\item[(4b)]
+Align the two subsequences using the rotation matrix and the translation vector computed in the previous step.
+
+\item[(4c)]
+\begin{verbatim}
+// Define the alignment matrix for the two subsequences:
+\end{verbatim}
+For each \texttt{atom1} in \texttt{subsequence1} and \texttt{atom2} in \texttt{subsequence2}:
+\begin{verbatim}
+    alignmentMatrix[atom1, atom2] = 
+        distance(atom1, atom2) < 3A ? 1 : 0
+\end{verbatim}
+
+\item[(4d)]
+Find the alignment of subsequences by running Smith-Waterman algorithm on them with the \texttt{alignmentMatrix} as an input.
+
+\item[(4e)]
+If computed alignment is better than the one found previously, continue the loop. Otherwise, return the best alignment found previously.
+
+\end{itemize} 
+
+\end{enumerate}
+\end{algorithm}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Porting process}
