@@ -1,29 +1,25 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2013.2.14)  27 JUN 2013 12:24
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2012.6.18)  28 JUN 2013 07:55
 entering extended mode
- restricted \write18 enabled.
  %&-line parsing enabled.
 **CompOptApp.tex
 (./CompOptApp.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
-rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
-c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
-h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
-h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
-ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
-rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
-kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
- polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
-lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
-welsh, loaded.
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german-x-2008-06-18, ngerman-x-2008-06-18, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, la
+tin, mongolian, mongolian2a, bokmal, nynorsk, polish, portuguese, romanian, rus
+sian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turkish, ukenglis
+h, ukrainian, uppersorbian, welsh, loaded.
 
 LaTeX Warning: File `example.eps' already exists on the system.
                Not generating it from this source.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/fix-cm.sty
-Package: fix-cm 2006/09/13 v1.1m fixes to LaTeX
+(/usr/share/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2006/03/24 v1.1n fixes to LaTeX
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1enc.def
+(/usr/share/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )) (./svjour3.cls
 Document Class: svjour3 2007/05/08 v3.2 
@@ -92,99 +88,99 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 157.
 \figgap=\dimen112
 \bibindent=\dimen113
 \@tempcntc=\count104
-) (/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: dvips.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 90.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/dvips.def
-File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2008/07/16 v0.04k Graphics/color for pdfTeX
+\Gread@gobject=\count105
 ))
 \Gin@req@height=\dimen114
 \Gin@req@width=\dimen115
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2008/03/30 v1.1d Input encoding file
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2006/05/05 v1.1b Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/latin1.def
-File: latin1.def 2008/03/30 v1.1d Input encoding file
+(/usr/share/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2006/05/05 v1.1b Input encoding file
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1enc.def
+(/usr/share/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/footmisc/footmisc.sty
-Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+(/usr/share/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2007/06/12 v5.4a a miscellany of footnote facilities
 \FN@temptoken=\toks19
 \footnotemargin=\dimen116
-\c@pp@next@reset=\count105
-Package footmisc Info: Declaring symbol style bringhurst on input line 855.
-Package footmisc Info: Declaring symbol style chicago on input line 863.
-Package footmisc Info: Declaring symbol style wiley on input line 872.
-Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+\c@pp@next@reset=\count106
+Package footmisc Info: Declaring symbol style bringhurst on input line 910.
+Package footmisc Info: Declaring symbol style chicago on input line 918.
+Package footmisc Info: Declaring symbol style wiley on input line 927.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 938.
 
-Package footmisc Info: Declaring symbol style lamport* on input line 903.
-Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+Package footmisc Info: Declaring symbol style lamport* on input line 958.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 979
 .
-)
-(./algorithmic.sty
+) (./algorithmic.sty
 Package: algorithmic 2006/06/02
 
 Document Style `algorithmic' - environment
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count106
-\calc@Bcount=\count107
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2005/08/06 v4.2 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count107
+\calc@Bcount=\count108
 \calc@Adimen=\dimen117
 \calc@Bdimen=\dimen118
 \calc@Askip=\skip43
 \calc@Bskip=\skip44
-LaTeX Info: Redefining \setlength on input line 76.
-LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count108
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count109
 \calc@Cskip=\skip45
 )
-\c@ALC@line=\count109
-\c@ALC@rem=\count110
-\c@ALC@depth=\count111
+\c@ALC@line=\count110
+\c@ALC@rem=\count111
+\c@ALC@depth=\count112
 \ALC@tlm=\skip46
 \algorithmicindent=\skip47
 ) (./algorithm.sty
 Package: algorithm 
+
 Document Style `algorithm' - floating environment
-(/usr/local/texlive/2012/texmf-dist/tex/latex/float/float.sty
+(/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count112
+\c@float@type=\count113
 \float@exts=\toks20
 \float@box=\box29
 \@float@everytoks=\toks21
 \@floatcapt=\box30
 )
 \@float@every@algorithm=\toks22
-\c@algorithm=\count113
-)
-(./CompOptApp.aux)
+\c@algorithm=\count114
+) (./CompOptApp.aux)
 \openout1 = `CompOptApp.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
@@ -204,6 +200,19 @@ LaTeX Font Info:    ... okay on input line 68.
 
 Unknown journal: specify \journalname{<name of your journal>} in preambel
 
+(/usr/share/texmf-dist/tex/context/base/supp-pdf.tex
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count115
+\scratchdimen=\dimen119
+\scratchbox=\box31
+\nofMPsegments=\count116
+\nofMParguments=\count117
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count118
+\MPscratchDim=\dimen120
+\MPnumerator=\count119
+\everyMPtoPDFconversion=\toks24
+)
 SVJour3 warning: Missing \journalname
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 115.
@@ -213,84 +222,116 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 115.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 115.
-[1]
+[1{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-File: 3dhitScalar.eps Graphic file (type eps)
-
-<3dhitScalar.eps> [3]
+<3dhitScalar.png, id=15, 206.7725pt x 389.455pt>
+File: 3dhitScalar.png Graphic file (type png)
+ <use 3dhitScalar.png> [3]
 Overfull \hbox (95.5032pt too wide) in paragraph at lines 372--378
 [][] 
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 396--397
+Underfull \hbox (badness 1281) in paragraph at lines 392--393
 []\T1/cmr/m/n/8 the sub-se-quence of length \T1/cmtt/m/n/8 len \T1/cmr/m/n/8 su
 r-round-ing the seed of
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 398--399
+Underfull \hbox (badness 1281) in paragraph at lines 394--395
 []\T1/cmr/m/n/8 the sub-se-quence of length \T1/cmtt/m/n/8 len \T1/cmr/m/n/8 su
 r-round-ing the seed of
  []
 
 
-Overfull \hbox (3.10753pt too wide) in paragraph at lines 393--400
+Overfull \hbox (3.10753pt too wide) in paragraph at lines 389--396
 [] 
  []
 
-[4] [5]
-Overfull \hbox (26.2422pt too wide) in paragraph at lines 508--519
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./3dhitScalar.png>]
+Underfull \vbox (badness 1383) has occurred while \output is active []
+
+ [5]
+Overfull \hbox (26.2422pt too wide) in paragraph at lines 504--515
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--519
+Underfull \hbox (badness 10000) in paragraph at lines 504--515
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 563--574
+Underfull \hbox (badness 10000) in paragraph at lines 559--570
 
  []
 
-[7]
-File: 3dhitParallel.eps Graphic file (type eps)
- <3dhitParallel.eps>
+[7] <3dhitParallel.png, id=38, 767.86874pt x 629.35126pt>
+File: 3dhitParallel.png Graphic file (type png)
+
+<use 3dhitParallel.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--646
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 649--660
+Underfull \hbox (badness 10000) in paragraph at lines 632--643
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 679--694
+Underfull \hbox (badness 10000) in paragraph at lines 653--664
 
  []
 
-[9] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 811--813
+
+Underfull \hbox (badness 10000) in paragraph at lines 683--698
+
+ []
+
+
+Underfull \vbox (badness 3942) has occurred while \output is active []
+
+ [9 <./3dhitParallel.png>] [10]
+Underfull \vbox (badness 6526) has occurred while \output is active []
+
+ [11]
+Underfull \hbox (badness 10000) in paragraph at lines 815--817
 []\T1/cmr/m/n/8 IBM, ICM (Uni-ver-sity of War-saw): Joint Cell Com-pe-tence Cen
 -ter,
  []
 
 [12] (./CompOptApp.aux) ) 
 Here is how much of TeX's memory you used:
- 1929 strings out of 493489
- 26148 string characters out of 3141370
- 80278 words of memory out of 3000000
- 5237 multiletter control sequences out of 15000+200000
- 14837 words of font info for 39 fonts, out of 3000000 for 9000
- 957 hyphenation exceptions out of 8191
+ 2295 strings out of 493886
+ 30588 string characters out of 1155696
+ 84951 words of memory out of 3000000
+ 5561 multiletter control sequences out of 10000+50000
+ 14837 words of font info for 39 fonts, out of 3000000 for 5000
+ 714 hyphenation exceptions out of 8191
  25i,9n,20p,332b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-sup
+er-t1.enc}</usr/share/texmf-dist/fonts/type1/bluesky/cm/cmbsy10.pfb></usr/share
+/texmf-dist/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type
+1/bluesky/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/bluesky/cm/cmmi7.pfb>
+</usr/share/texmf-dist/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf-dist/
+fonts/type1/bluesky/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/bluesky/cm/c
+mr7.pfb></usr/share/texmf-dist/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/te
+xmf-dist/fonts/type1/bluesky/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/cm-super/sfbx0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
+fbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></u
+sr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-
+dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type
+1/public/cm-super/sfti0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
+er/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb
+></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on CompOptApp.pdf (12 pages, 386485 bytes).
+PDF statistics:
+ 116 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on CompOptApp.dvi (12 pages, 40816 bytes).

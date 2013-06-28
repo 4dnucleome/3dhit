@@ -301,7 +301,7 @@ alignment matrix which is carried out by the main loop of the program and is com
 To identify similarity substructures of two proteins, the program compares
 parts of their chains with a fixed length of 256 amino acids
 that we called \emph{segments}.
-The \prog{} program analyses structural similarities between each pair of segments through five successive steps (see pseudo-code of Algorithm 1).\\
+The \prog{} program analyses structural similarities between each pair of segments through two successive steps (see pseudo-code of Algorithm 1).\\
 First, it decides whether central parts of segments, which we call
 \emph{seeds}, are similar enough to proceed with further computations.
 Seeds are very short subsequences with 13 amino acids.
@@ -312,7 +312,7 @@ the algorithm starts to analyze two longer continuous parts of the main chains
 centered on seeds.
 It uses a rotation matrix and a translation vector for a Cartesian-space
 superimposition of the two seeds to rotate and translate these large segments.
-Third, it defines the similarity matrix for the dynamic programming in the
+Next, it defines the similarity matrix for the dynamic programming in the
 following way.
 If two alpha carbon atoms taken from the superimposed large segments are close enough
 in space (below 3A), it assigns 1 to their similarity score or 0, otherwise.
@@ -320,15 +320,15 @@ Then alignment score based on such similarity score matrix is computed.
 If the alignment score is large enough, algorithm passes this pair of segments
 on to the next filter.
 The whole procedure is repeated for subsequences of 100, 200 and 256
-amino acids centered on seeds.
-Fourth, the resulting score (number of superimposed alpha carbon atoms) is recorded in an
-additional final alignment matrix, containing segment superposition scores.
-Fifth, this matrix is then used to find the best alignment of whole proteins.
+amino acids centered on seeds.\\
+For each pair of segments, the resulting score -- number of superimposed alpha carbon atoms in the aligned segments -- is recorded in an
+additional final alignment matrix.
+At the end, this final matrix is used to find the best alignment of whole proteins.
 If no pair of segments did pass the filter sequence just described, the overall score is set to 0.
 \begin{figure}[h]
 \centering{
 %\resizebox{0.5\textwidth}{!}{
-\includegraphics[scale=0.35]{3dhitScalar}
+\includegraphics[scale=0.35]{3dhitScalar.png}
 }
 %}
 \caption{The flow chart of the scalar (starting) version of the 3D-Hit program.} \label{fig:figureone}
@@ -379,11 +379,7 @@ The number of superimposed Calpha atoms in the aligned segments.\\
 \begin{enumerate}
 \item
 Extract the seed of each segment (seed is the central part of segment consisting of 13 amino acids).
-
-\item
 Find the rotation matrix and the translation vector minimizing the RMSD between the two seeds.
-
-\item
 If the optimal RMSD is too low, exit and return 0.
 
 \item
@@ -589,7 +585,7 @@ In addition, running two parallel instances of the \prog{} program, each using 8
 \begin{figure}[h]
 \centering{
 \resizebox{0.9\textwidth}{!}{
-\includegraphics{3dhitParallel}
+\includegraphics{3dhitParallel.png}
 }
 }
 \caption{The flow charts of the PowerXCell8i (left) and OpenMP (right) parallel versions of the 3D-Hit program. Important features of both implementations are indicated in the picture.} \label{fig:figuretwo}
@@ -618,7 +614,7 @@ gave an average speedup of 8.5 over the initial x86 version.
 \subsection{PowerXCell8i code analysis}
 We have used a \texttt{spu\_timing} facility to analyze and tune the computational
 kernels of the \prog{} Cell implementation.
-Results presented in Tab.~\ref{tab:t3} show that we achieved
+Results presented in Tab.~\ref{tab:t3} and Tab.~\ref{tab:t4} show that we achieved
 very good scaling over increasing number of working SPE threads.
 The part of code that can be parallelized represents about $97.994\%$ of the execution
 time spent by the single-threaded version of \prog{}.
@@ -627,7 +623,7 @@ The difference between observed and expected values is the most probably due to 
 This approach increases the probability of occurrence of inefficient load balancing.
 \begin{table}[htb]
 \begin{footnotesize}
-\caption{Profile results.}
+\caption{Profile results -- percentage of time spent in particular sections of the program.}
 \label{tab:t3}
 \newcommand{\m}{\hphantom{$-$}}
 \newcommand{\cc}[1]{\multicolumn{1}{c}{#1}}
@@ -643,9 +639,17 @@ Waiting for threads & 97.844704 \% & 80.333420 \% & 62.397312 \% \\
 Computing global result & 0.019680 \% & 0.139842 \% & 0.219315 \% \\
 \hline
 \end{tabular}\\[2pt]
+\end{footnotesize}
+\end{table}
 
-\bigskip
-
+\begin{table}[htb]
+\begin{footnotesize}
+\caption{Profile results -- absolute time spent in particular sections of the program.}
+\label{tab:t4}
+\newcommand{\m}{\hphantom{$-$}}
+\newcommand{\cc}[1]{\multicolumn{1}{c}{#1}}
+\renewcommand{\tabcolsep}{0.5pc} % enlarge column spacing
+\renewcommand{\arraystretch}{1.2} % enlarge line spacing
 \begin{tabular}{@{}llll}
 \hline
 \textbf{Part of code} & \textbf{1 SPE} & \textbf{8 SPEs} & \textbf{16 SPEs} \\
@@ -667,11 +671,11 @@ We have chosen a set of 18 proteins from a database and compared execution times
 on a Quad-Core AMD Opteron Processor 8354 based nodes and on a QS22 server.
 Each pair of proteins from the test set was compared during a test run, which
 gave us 324 single test cases.
-The average results are presented in Tab.~\ref{tab:t4}.
+The average results are presented in Tab.~\ref{tab:t5}.
 \begin{table}[htb]
 \begin{footnotesize}
 \caption{Performance results on two systems: AMD Opteron 8354 and PowerXCell8i QS22.}
-\label{tab:t4}
+\label{tab:t5}
 \newcommand{\m}{\hphantom{$-$}}
 \newcommand{\cc}[1]{\multicolumn{1}{c}{#1}}
 \renewcommand{\tabcolsep}{0.5pc} % enlarge column spacing
