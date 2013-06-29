@@ -524,7 +524,8 @@ operate on.
 Nevertheless, it was a wrong decision because of the inefficient load balancing.
 As described before, the algorithm for comparing segments does not always behave in the same manner.
 For example, the algorithm may finish very quickly if seeds have poor similarity rate.
-Moreover, cutoffs may occur also during the analysis of longer subsequences surrounding the seeds, as noted in the step 2 of the Algorithm 1.
+Moreover, cutoffs may occur at the every stage, including analysis of longer
+segments.
 That is why it is important to assign each SPE with more or less the same
 amount of real work, which may not necessarily mean the same amount of pairs of
 segments.\\

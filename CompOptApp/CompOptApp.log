@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2012.6.18)  28 JUN 2013 07:55
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2012.6.18)  29 JUN 2013 07:10
 entering extended mode
  %&-line parsing enabled.
 **CompOptApp.tex
@@ -267,7 +267,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 504--515
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 559--570
+Underfull \hbox (badness 10000) in paragraph at lines 558--569
 
  []
 
@@ -279,17 +279,17 @@ File: 3dhitParallel.png Graphic file (type png)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 632--643
+Underfull \hbox (badness 10000) in paragraph at lines 631--642
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 653--664
+Underfull \hbox (badness 10000) in paragraph at lines 652--663
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--698
+Underfull \hbox (badness 10000) in paragraph at lines 682--697
 
  []
 
@@ -300,7 +300,7 @@ Underfull \vbox (badness 3942) has occurred while \output is active []
 Underfull \vbox (badness 6526) has occurred while \output is active []
 
  [11]
-Underfull \hbox (badness 10000) in paragraph at lines 815--817
+Underfull \hbox (badness 10000) in paragraph at lines 814--816
 []\T1/cmr/m/n/8 IBM, ICM (Uni-ver-sity of War-saw): Joint Cell Com-pe-tence Cen
 -ter,
  []
@@ -329,7 +329,7 @@ dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type
 1/public/cm-super/sfti0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
 er/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb
 ></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on CompOptApp.pdf (12 pages, 386485 bytes).
+Output written on CompOptApp.pdf (12 pages, 386529 bytes).
 PDF statistics:
  116 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
